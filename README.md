@@ -30,33 +30,38 @@ Trained for 2 epochs w/ batch size = 8, learning_rate=2e-5, weight_decay=0.01
 The model performs very well on the evaluation set with an overall accuracy of 98.8%.
 
 The three errors:
-Group_ID	Predicted
-B_098	        C
-C_157	        B
-B_080	        C
+
+| Group_ID   |      Predicted      |
+|----------|:-------------:|
+| B_098 |  C |
+| C_157 |    B   |
+| B_080 | C |
 
 Classification metrics per class:
 
-Group: C, Accuracy: 0.988, Recall: 0.979, Precision: 0.959, Specificity: 0.990, FPR: 0.010
-Group: A, Accuracy: 1.000, Recall: 1.000, Precision: 1.000, Specificity: 1.000, FPR: 0.000
-Group: B, Accuracy: 0.988, Recall: 0.920, Precision: 0.958, Specificity: 0.995, FPR: 0.005
+| Group   |      Accuracy      |  Recall |  Precision |  Specificity |  FPR |
+|----------|:-------------:|------:|------:|------:|------:|
+| C |  0.988 |  0.979 | 0.959  |  0.990 |  0.010 |
+| A |  1.000 |  1.000 |  1.000 |  1.000 | 0.000 |
+| B |  0.988 |  0.920 | 0.958  |  0.995 | 0.005  |
 
 
 ### Predictions
 
 For the unknown proteins the following predictions were made:
 
-ID
-01 | Prediction: C
-02 | Prediction: A
-03 | Prediction: A
-04 | Prediction: C
-05 | Prediction: B
-06 | Prediction: B
-07 | Prediction: B
-08 | Prediction: B
-09 | Prediction: C
-10 | Prediction: A
+| ID   |      Predicted      |
+|----------|:-------------:|
+| 01 | Prediction: C |
+| 02 | Prediction: A |
+| 03 | Prediction: A |
+| 04 | Prediction: C |
+| 05 | Prediction: B |
+| 06 | Prediction: B |
+| 07 | Prediction: B |
+| 08 | Prediction: B |
+| 09 | Prediction: C |
+| 10 | Prediction: A |
 
 Softmaxed probabilities available in results/rita_predictions.csv
 
